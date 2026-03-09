@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Modern Web Developer</title>
+    <meta name="description" content="A modern portfolio of a passionate web developer and UI design enthusiast.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Librabries: Boxicons & Remix Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Faheem</span><span class="logo-accent">.</span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Navigation Close Button -->
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Mobile Navigation Toggle Button -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content">
+                    <h3 class="home-subtitle">Hello, I'm</h3>
+                    <h1 class="home-title">Muhammad Faheem<br>Bin Wajid</h1>
+
+                    <div class="home-typing-box">
+                        <span class="typing-text">I'm a <span id="typing-effect"></span></span>
+                    </div>
+
+                    <p class="home-description">
+                        I craft modern, highly interactive, and performant web experiences using the latest web
+                        technologies.
+                    </p>
+
+                    <div class="home-buttons">
+                        <a href="#contact" class="btn btn-primary">Let's Talk <i class="ri-arrow-right-line"></i></a>
+                        <a href="#portfolio" class="btn btn-outline">My Work</a>
+                    </div>
+
+                    <div class="home-social">
+                        <a href="#" class="home-social-link"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="home-social-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="home-social-link"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="home-social-link"><i class='bx bxl-dribbble'></i></a>
+                    </div>
+                </div>
+
+                <div class="home-img-wrapper">
+                    <!-- Added a generic gradient shape as placeholder for user profile image -->
+                    <div class="home-profile-blob">
+                        <img src="WhatsApp_Image_2024-02-05_at_13.22.52_459a4b62-removebg-preview.png" alt="Profile"
+                            class="home-profile-img">
+                    </div>
+                    <!-- Floating abstract shapes -->
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <span class="section-subtitle">My Introduction</span>
+
+                <div class="about-container grid">
+                    <div class="about-img-box">
+                        <img src="WhatsApp_Image_2024-02-05_at_13.22.52_459a4b62-removebg-preview.png" alt="About me"
+                            class="about-img">
+                        <div class="about-experience">
+                            <span class="exp-number">05+</span>
+                            <span class="exp-text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+
+                    <div class="about-data">
+                        <p class="about-description">
+                            I am a passionate web developer with a keen eye for UI/UX design. I specialize in building
+                            robust and pixel-perfect digital experiences. My core focus is on creating accessible,
+                            inclusive, and visually stunning web applications that deliver real value.
+                        </p>
+
+                        <div class="about-info grid">
+                            <div class="info-box">
+                                <i class="ri-award-line info-icon"></i>
+                                <h3 class="info-title">Experience</h3>
+                                <span class="info-subtitle">5+ Years Working</span>
+                            </div>
+                            <div class="info-box">
+                                <i class="ri-briefcase-line info-icon"></i>
+                                <h3 class="info-title">Completed</h3>
+                                <span class="info-subtitle">48+ Projects</span>
+                            </div>
+                            <div class="info-box">
+                                <i class="ri-customer-service-2-line info-icon"></i>
+                                <h3 class="info-title">Support</h3>
+                                <span class="info-subtitle">Online 24/7</span>
+                            </div>
+                        </div>
+
+                        <a href="Faheem cv.pdf" target="_blank" class="btn btn-primary">
+                            Download CV <i class="ri-file-download-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <span class="section-subtitle">My Technical Level</span>
+
+                <div class="skills-container grid">
+                    <div class="skills-content">
+                        <h3 class="skills-title"><i class="ri-braces-line"></i> Frontend Developer</h3>
+
+                        <div class="skills-box">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">HTML & CSS</h3>
+                                    <span class="skills-number">95%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">JavaScript</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">React & Tailwind CSS</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-content">
+                        <h3 class="skills-title"><i class="ri-paint-brush-line"></i> UI/UX Design</h3>
+
+                        <div class="skills-box">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Figma</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Wireframing</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Prototyping</h3>
+                                    <span class="skills-number">75%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <span class="section-subtitle">What I Offer</span>
+
+                <div class="services-container grid">
+                    <div class="services-card">
+                        <div class="services-icon-box">
+                            <i class="ri-layout-3-line services-icon"></i>
+                        </div>
+                        <h3 class="services-title">Frontend<br>Development</h3>
+                        <p class="services-description">Building responsive and interactive user interfaces with modern
+                            web technologies and frameworks.</p>
+                        <a href="#contact" class="services-button">Know More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+
+                    <div class="services-card">
+                        <div class="services-icon-box">
+                            <i class="ri-pen-nib-line services-icon"></i>
+                        </div>
+                        <h3 class="services-title">UI/UX<br>Design</h3>
+                        <p class="services-description">Creating intuitive, user-centric, and highly aesthetic digital
+                            product designs via wireframes and prototypes.</p>
+                        <a href="#contact" class="services-button">Know More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+
+                    <div class="services-card">
+                        <div class="services-icon-box">
+                            <i class="ri-speed-up-line services-icon"></i>
+                        </div>
+                        <h3 class="services-title">Website<br>Optimization</h3>
+                        <p class="services-description">Improving website performance, accessibility, SEO, and overall
+                            user experience metrics.</p>
+                        <a href="#contact" class="services-button">Know More <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <span class="section-subtitle">My Recent Work</span>
+
+                <div class="portfolio-filters">
+                    <span class="filter-item active-filter" data-filter="all">All</span>
+                    <span class="filter-item" data-filter=".web">Web</span>
+                    <span class="filter-item" data-filter=".app">App</span>
+                    <span class="filter-item" data-filter=".design">Design</span>
+                </div>
+
+                <div class="portfolio-container grid">
+                    <div class="portfolio-card mix web">
+                        <div class="portfolio-img-wrapper">
+                            <img src="237.png" alt="Project 1" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://denta-lux.vercel.app/" class="portfolio-link"><i
+                                            class="ri-external-link-line"></i> Live
+                                        Demo</a>
+                                    <a href="https://github.com/faheem078/Dental-Lux" class="portfolio-link"><i
+                                            class="ri-github-line"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Web Development</span>
+                            <h3 class="portfolio-title">Dental Lux</h3>
+                            <div class="portfolio-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card mix app">
+                        <div class="portfolio-img-wrapper">
+                            <img src="gym.png" alt="Project 2" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://faheem078.github.io/FlexZone-Gym/" class="portfolio-link"><i
+                                            class="ri-external-link-line"></i> Live
+                                        Demo</a>
+                                    <a href="https://github.com/faheem078/FlexZone-Gym" class="portfolio-link"><i
+                                            class="ri-github-line"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Web Development</span>
+                            <h3 class="portfolio-title">FlexZone Gym/h3>
+                                <div class="portfolio-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card mix design">
+                        <div class="portfolio-img-wrapper">
+                            <img src="98.png" alt="Project 3" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://blue-peak-heating-cooling-wlcq.vercel.app/"
+                                        class="portfolio-link"><i class="ri-external-link-line"></i> Live
+                                        Demo</a>
+                                    <a href="https://github.com/faheem078/Music-App" class="portfolio-link"><i
+                                            class="ri-github-line"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-category">Web Development</span>
+                            <h3 class="portfolio-title">Music App</h3>
+                            <div class="portfolio-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog section" id="blog">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <span class="section-subtitle">My Insights</span>
+
+                <div class="blog-container grid">
+                    <article class="blog-card">
+                        <div class="blog-img-box">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop"
+                                alt="Blog 1" class="blog-img">
+                            <span class="blog-date">March 05, 2026</span>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title"><a href="#">Modern UI Design Trends in 2026</a></h3>
+                            <p class="blog-description">Exploring glassmorphism, dynamic gradients, and responsive
+                                typography in modern web applications.</p>
+                            <a href="#" class="blog-button">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-img-box">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop"
+                                alt="Blog 2" class="blog-img">
+                            <span class="blog-date">Feb 18, 2026</span>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title"><a href="#">Mastering CSS Grid and Flexbox</a></h3>
+                            <p class="blog-description">A deep dive into advanced layout techniques for building complex
+                                web interfaces rapidly.</p>
+                            <a href="#" class="blog-button">Read More <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <span class="section-subtitle">Get In Touch</span>
+
+                <div class="contact-container grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="ri-mail-send-line contact-card-icon"></i>
+                            <h3 class="contact-card-title">Email</h3>
+                            <span class="contact-card-data">Faheemtech3@gmail.com</span>
+                            <a href="mailto:Faheemtech@gmail.com" class="contact-button">Write me <i
+                                    class="ri-arrow-right-line"></i></a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="ri-whatsapp-line contact-card-icon"></i>
+                            <h3 class="contact-card-title">WhatsApp</h3>
+                            <span class="contact-card-data">+923250791106</span>
+                            <a href="https://wa.me/923250791106" target="_blank" class="contact-button">Write me <i
+                                    class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact-form" id="contact-form">
+                        <div class="contact-form-group">
+                            <div class="contact-form-div">
+                                <label for="" class="contact-form-tag">Name</label>
+                                <input type="text" placeholder="Insert your name" class="contact-form-input">
+                            </div>
+
+                            <div class="contact-form-div">
+                                <label for="" class="contact-form-tag">Mail</label>
+                                <input type="email" placeholder="Insert your email" class="contact-form-input">
+                            </div>
+                        </div>
+
+                        <div class="contact-form-div contact-form-area">
+                            <label for="" class="contact-form-tag">Project</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your project details..."
+                                class="contact-form-input"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary">Send Message <i class="ri-send-plane-line"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container grid">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <span class="logo-text">Faheem</span><span class="logo-accent">.</span>
+                </a>
+                <p class="footer-description">Creating modern and beautiful digital <br> experiences every single day.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer-social-link"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer-social-link"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#services" class="footer-link">Services</a></li>
+                    <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer-copy">
+            &#169; 2026 Muhammad Faheem Bin Wajid. All rights reserved.
+        </span>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- Scripts -->
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- MixitUp for filtering portfolio -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>

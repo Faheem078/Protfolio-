@@ -1,0 +1,74 @@
+/*=============== ANIMATIONS CSS ===============*/
+
+/* CUSTOM CURSOR */
+[data-cursor-dot] {
+    width: 8px;
+    height: 8px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    pointer-events: none;
+}
+
+[data-cursor-outline] {
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsla(250, 66%, 70%, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    [data-cursor-dot],
+    [data-cursor-outline] {
+        display: none;
+        /* Hide custom cursor on mobile/touch interfaces */
+    }
+}
+
+/* KEYFRAMES FOR BLOBS/SHAPES */
+.shape-1 {
+    animation: floatShape1 6s ease-in-out infinite;
+}
+
+.shape-2 {
+    animation: floatShape2 8s ease-in-out infinite;
+}
+
+@keyframes floatShape1 {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes floatShape2 {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(30px) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
